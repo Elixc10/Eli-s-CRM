@@ -11,13 +11,12 @@
 <table class="table-bordered table table-striped table-hover">
   <thead class="table-dark">
     <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">Phone</th>
-      <th scope="col">Address</th>
-      <th scope="col">City</th>
-      <th scope="col">State</th>
-      <th scope="col">Zipcode</th>
+      <th scope="col">Song Title</th>
+      <th scope="col">Artist_Name</th>
+      <th scope="col">Solo or Group</th>
+      <th scope="col">Genre</th>
+      <th scope="col">Language</th>
+      <th scope="col">Date Released</th>
       <th scope="col">Created At</th>
       <th scope="col">ID</th>
     </tr>
@@ -28,13 +27,12 @@
 {% if records %}
     {% for record in records %}
       <tr>
-        <td>{{record.first_name}} {{record.last_name}} </td>
-        <td>{{record.email}}</td>
-        <td>{{record.phone}}</td>
-        <td>{{record.address}}</td>
-        <td>{{record.city}}</td>
-        <td>{{record.state}}</td>
-        <td>{{record.zipcode}}</td>
+        <td>{{record.song_title}}</td>
+        <td>{{record.artist_name}}</td>
+        <td>{{record.solo_or_group}}</td>
+        <td>{{record.genre}}</td>
+        <td>{{record.language}}</td>
+        <td>{{record.date_released}}</td>
         <td>{{record.created_at}}</td>
         <td><a href="{% url 'record' record.id %}">{{record.id}}</a></td>
       </tr>
@@ -71,4 +69,4 @@
 
 
 
-{% endblock %}
+{% endblock %} 

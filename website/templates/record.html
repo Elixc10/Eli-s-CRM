@@ -3,31 +3,27 @@
 
 <div class="card">
   <div class="card-header"><strong>
-    	{{ customer_record.first_name }} 
-		{{ customer_record.last_name }}</strong>
+    	{{ customer_record.song_title }} 
+		</strong>
   </div>
   <div class="card-body">
 
 
+  	
+  <p class="card-text">
+	<strong>Artist Name: </strong>{{ customer_record.artist_name }}</p>
 
 	<p class="card-text">
-	<strong>Email: </strong>{{ customer_record.email }}</p>
+	<strong>Solo or Group: </strong>{{ customer_record.solo_or_group }}</p>
 
 	<p class="card-text">
-	<strong>Phone: </strong>{{ customer_record.phone }}
-	</p>
+	<strong>Genre: </strong>{{ customer_record.genre }}</p>
 
 	<p class="card-text">
-	<strong>Address: </strong>{{ customer_record.address }}</p>
+	<strong>Language: </strong>{{ customer_record.language }}</p>
 
 	<p class="card-text">
-	<strong>City: </strong>{{ customer_record.city }}</p>
-
-	<p class="card-text">
-	<strong>State: </strong>{{ customer_record.state }}</p>
-
-	<p class="card-text">
-	<strong>Zipcode: </strong>{{ customer_record.zipcode }}</p>
+	<strong>Date Released: </strong>{{ customer_record.date_released }}</p>
 
 	<p class="card-text">
 	<strong>Create At: </strong>{{ customer_record.created_at }}</p>
