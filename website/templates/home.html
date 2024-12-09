@@ -16,7 +16,7 @@
       <th scope="col">Solo or Group</th>
       <th scope="col">Genre</th>
       <th scope="col">Language</th>
-      <th scope="col">Date Released</th>
+      <th scope="col">Year Released</th>
       <th scope="col">Created At</th>
       <th scope="col">ID</th>
     </tr>
@@ -32,15 +32,15 @@
         <td>{{record.solo_or_group}}</td>
         <td>{{record.genre}}</td>
         <td>{{record.language}}</td>
-        <td>{{record.date_released}}</td>
+        <td>{{record.year_released}}</td>
         <td>{{record.created_at}}</td>
         <td><a href="{% url 'record' record.id %}">{{record.id}}</a></td>
       </tr>
     {% endfor %}
 {% endif %}
 
-    </tbody>
-  </table>
+   </tbody>
+</table>
 
   
 

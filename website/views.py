@@ -97,4 +97,6 @@ def update_record(request, pk):
 	else:
 		messages.success(request, "You must be logged in.")
 		return redirect('home')
+
+
  

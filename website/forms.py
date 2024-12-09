@@ -42,7 +42,7 @@ class AddRecordForm(forms.ModelForm):
 	solo_or_group = forms.CharField(required=True, widget=forms.widgets.TextInput(attrs={"placeholder":"Solo or Group", "class":"form-control"}), label="")
 	genre = forms.CharField(required=True, widget=forms.widgets.TextInput(attrs={"placeholder":"Genre", "class":"form-control"}), label="")
 	language = forms.CharField(required=True, widget=forms.widgets.TextInput(attrs={"placeholder":"Language", "class":"form-control"}), label="")
-	date_released = forms.CharField(required=True, widget=forms.widgets.TextInput(attrs={"placeholder":"Date Released", "class":"form-control"}), label="")
+	year_released = forms.IntegerField(required=True, widget=forms.widgets.NumberInput(attrs={"placeholder":"Year Released", "class":"form-control"}), label="")
 
 
 	class Meta:
